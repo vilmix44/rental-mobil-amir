@@ -107,7 +107,7 @@ const REVIEWS = Object.freeze([
 /* Ganti isi sesuai aturan asli Amir Rental. Format: [pertanyaan, jawaban]. */
 const FAQ = Object.freeze([
   ["Apa syarat sewa lepas kunci?", "KTP dan SIM A yang masih aktif. Admin akan memverifikasi saat serah terima unit."],
-  ["Bagaimana cara pembayaran?", "Pembayaran dikonfirmasi lewat WhatsApp setelah pesanan diterima. Ganti jawaban ini dengan aturan DP dan metode bayar Anda."],
+  ["Bagaimana cara pembayaran?", "Pembayaran dikonfirmasi lewat WhatsApp setelah pesanan diterima. "],
   ["Siapa yang menanggung bahan bakar?", "Untuk lepas kunci, bahan bakar ditanggung penyewa. Untuk sewa plus driver, tanyakan rinciannya ke admin."],
   ["Apakah mobil bisa diantar?", "Bisa, untuk wilayah Nunukan. Biaya antar dikonfirmasi lewat WhatsApp."],
   ["Bisa sewa lebih dari 30 hari?", "Form booking dibatasi 30 hari. Untuk sewa lebih lama, hubungi kami lewat WhatsApp."],

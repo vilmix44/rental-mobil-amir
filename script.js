@@ -31,7 +31,7 @@ const SERVICES = Object.freeze([
     sub: "Bawa mobil sendiri, bebas atur rute",
     pts: [
       "Syarat: KTP dan SIM A",
-      "Harga per hari sesuai tabel",
+      "Harga dikonfirmasi lewat WhatsApp",
       "Unit diserahkan dalam kondisi bersih",
     ],
   },
@@ -116,7 +116,6 @@ const FAQ = Object.freeze([
 
 /* 3. HELPER ----------------------------------------------------------------- */
 const $ = (id) => document.getElementById(id);
-const rp = (n) => "Rp" + Number(n).toLocaleString("id-ID");
 const SVG_NS = "http://www.w3.org/2000/svg";
 
 function el(tag, cls, text) {
@@ -236,16 +235,13 @@ CARS.forEach((c) => {
   d.appendChild(carPhoto(c));
   d.appendChild(el("h3", null, c.n));
   d.appendChild(el("p", null, c.s));
-  const pr = el("div", "price", rp(c.p));
-  pr.appendChild(el("small", null, " / hari"));
-  d.appendChild(pr);
   const bt = el("button", "btn", "Pesan");
   bt.type = "button";
   bt.addEventListener("click", () => openBook({ car: c.n }));
   d.appendChild(bt);
   $("cars").appendChild(d);
 
-  fCar.appendChild(new Option(c.n + " – " + rp(c.p), c.n));
+  fCar.appendChild(new Option(c.n, c.n));
 });
 
 /* Rating: rata-rata dan daftar ulasan */
@@ -417,16 +413,14 @@ function state() {
     car,
     svc,
     days,
-    total: car.p * days,
     name: cleanName(fName.value),
     date: /^\d{4}-\d{2}-\d{2}$/.test(fDate.value) ? fDate.value : "",
   };
 }
 
-/* Perbarui estimasi harga dan isi pesan WhatsApp setiap isian berubah */
+/* Perbarui isi pesan WhatsApp setiap isian berubah */
 function update() {
   const s = state();
-  $("est").textContent = "Estimasi: " + rp(s.total);
 
   const tgl = s.date
     ? new Date(s.date + "T00:00:00").toLocaleDateString("id-ID", {
@@ -443,8 +437,7 @@ function update() {
       "Layanan: " + s.svc.id + "\n" +
       "Mobil: " + s.car.n + "\n" +
       "Tanggal ambil: " + tgl + "\n" +
-      "Lama: " + s.days + " hari\n" +
-      "Estimasi: " + rp(s.total),
+      "Lama: " + s.days + " hari",
   );
 }
 

@@ -1,98 +1,46 @@
-
 <!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
-    <title>Rental Mobil Nunukan | Sewa Mobil Lepas Kunci & Driver - Amir Rental</title>
-
+    <title>Amir Rental – Rental Mobil Nunukan</title>
     <meta
       name="description"
-      content="Amir Rental menyediakan jasa rental mobil Nunukan, sewa mobil lepas kunci maupun dengan driver. Pilihan armada nyaman untuk perjalanan di Kabupaten Nunukan."
+      content="Rental mobil Nunukan: lepas kunci dan sewa dengan driver. Harga tertulis jelas."
     />
-
-    <meta name="robots" content="index, follow" />
-
-    <link
-      rel="canonical"
-      href="https://rental-mobil-amir.pages.dev/"
-    />
-
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Rental Mobil Nunukan | Amir Rental"
-    />
-    <meta
-      property="og:description"
-      content="Cari rental mobil Nunukan? Amir Rental menyediakan layanan sewa mobil lepas kunci dan dengan driver."
-    />
-    <meta
-      property="og:url"
-      content="https://rental-mobil-amir.pages.dev/"
-    />
-
     <meta name="referrer" content="no-referrer" />
-
-    <!-- KEAMANAN: CSP -->
+    <!-- KEAMANAN: CSP ketat (tanpa script/style inline). Header lengkap ada di file _headers / .htaccess. -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; manifest-src 'none'"
-    />
-
+      content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; manifest-src 'none'"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
       <div class="w nav">
-        <a class="logo" href="#beranda">
-          <b>Amir Rental</b>
-          <small>Rental Mobil Nunukan</small>
-        </a>
-
+        <a class="logo" href="#beranda"><b>Amir Rental</b><small>Rental Mobil Nunukan</small></a>
         <ul class="menu" id="menu">
           <li><a href="#beranda">Beranda</a></li>
-
           <li>
-            <button class="dd" id="ddb" aria-expanded="false" aria-controls="sub">
-              Layanan ▾
-            </button>
+            <button class="dd" id="ddb" aria-expanded="false" aria-controls="sub">Layanan ▾</button>
             <ul class="sub" id="sub"></ul>
           </li>
-
           <li><a href="#mobil">Jenis Mobil</a></li>
           <li><a href="#lokasi">Lokasi</a></li>
           <li><a href="#rating">Rating</a></li>
           <li><a href="#kontak">Kontak</a></li>
           <li><a href="#tentang">Tentang Kami</a></li>
         </ul>
-
         <div class="cta">
-          <a
-            class="btn out"
-            data-wa="ask"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Hubungi</a>
-
-          <button class="btn" data-book>Booking</button>
+          <a class="btn out" data-wa="ask" target="_blank" rel="noopener noreferrer">Hubungi</a
+          ><button class="btn" data-book>Booking</button>
         </div>
-
-        <button
-          class="burger"
-          id="bg"
-          aria-label="Buka menu"
-          aria-expanded="false"
-        >
+        <button class="burger" id="bg" aria-label="Buka menu" aria-expanded="false">
           <svg
             width="22"
             height="22"
@@ -108,56 +56,27 @@
     </header>
 
     <main>
-      <!-- BERANDA -->
       <section class="hero" id="beranda">
         <div class="w">
           <div class="g">
             <div>
-              <h1>
-                Rental Mobil Nunukan,
-                <em>Perjalanan Lebih Nyaman.</em>
-              </h1>
-
+              <h1>Mobil siap, <em>jalan</em> tenang.</h1>
               <p>
-                Amir Rental menyediakan layanan rental mobil di Kabupaten
-                Nunukan, Kalimantan Utara. Tersedia pilihan sewa mobil
-                lepas kunci maupun dengan driver, dengan harga yang
-                dikonfirmasi secara jelas sebelum pemesanan.
+                Armada terawat, harga tertulis jelas sejak awal. Pilih lepas kunci atau lengkap
+                dengan driver.
               </p>
-
               <div class="row">
-                <button class="btn sky" data-book>
-                  Booking sekarang
-                </button>
-
-                <a
-                  class="btn out"
-                  data-wa="ask"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button class="btn sky" data-book>Booking sekarang</button
+                ><a class="btn out" data-wa="ask" target="_blank" rel="noopener noreferrer"
+                  >Hubungi via WhatsApp</a
                 >
-                  Hubungi via WhatsApp
-                </a>
               </div>
-
               <div class="stats">
-                <div>
-                  <b>6</b>
-                  <span>unit armada pilihan</span>
-                </div>
-
-                <div>
-                  <b>24 jam</b>
-                  <span>respon admin</span>
-                </div>
-
-                <div>
-                  <b>7 hari</b>
-                  <span>buka setiap minggu</span>
-                </div>
+                <div><b>6</b><span>unit armada pilihan</span></div>
+                <div><b>24 jam</b><span>respon admin</span></div>
+                <div><b>7 hari</b><span>buka setiap minggu</span></div>
               </div>
             </div>
-
             <aside class="pop">
               <div class="ph" id="popph"></div>
               <small>Paling sering dipesan</small>
@@ -168,94 +87,42 @@
         </div>
       </section>
 
-      <!-- LAYANAN -->
       <section id="layanan">
         <div class="w">
-          <h2>Layanan Rental Mobil Nunukan</h2>
+          <h2>Layanan</h2>
           <div class="grid g2" id="svc"></div>
         </div>
       </section>
-
-      <!-- JENIS MOBIL -->
       <section id="mobil">
         <div class="w">
-          <h2>Pilihan Mobil Rental Nunukan</h2>
-
-          <div
-            class="chips"
-            id="chips"
-            role="group"
-            aria-label="Filter jenis mobil"
-          ></div>
-
+          <h2>Jenis Mobil</h2>
+          <div class="chips" id="chips" role="group" aria-label="Filter jenis mobil"></div>
           <div class="grid g3" id="cars"></div>
-
-          <p class="note">
-            Tarif lepas kunci maupun sewa plus driver dikonfirmasi lewat WhatsApp.
-          </p>
+          <p class="note">Tarif lepas kunci maupun sewa plus driver dikonfirmasi lewat WhatsApp.</p>
         </div>
       </section>
 
-      <!-- INFORMASI SEO -->
-      <section id="informasi-rental">
-        <div class="w">
-          <h2>Rental Mobil Nunukan - Amir Rental</h2>
-
-          <p>
-            Sedang mencari rental mobil di Nunukan?
-            Amir Rental menyediakan layanan penyewaan mobil
-            untuk kebutuhan perjalanan pribadi, keluarga,
-            maupun aktivitas lainnya di Kabupaten Nunukan,
-            Kalimantan Utara.
-          </p>
-
-          <p>
-            Tersedia layanan sewa mobil lepas kunci dan
-            sewa mobil dengan driver. Untuk informasi
-            ketersediaan kendaraan, harga sewa, dan
-            pemesanan, silakan hubungi admin Amir Rental
-            melalui WhatsApp.
-          </p>
-
-          <p>
-            Kami melayani kebutuhan transportasi di wilayah
-            Nunukan. Unit kendaraan dapat diantar sesuai
-            kesepakatan dan ketersediaan layanan.
-          </p>
-        </div>
-      </section>
-
-      <!-- FAQ -->
       <section id="faq">
         <div class="w">
-          <h2>Pertanyaan Seputar Rental Mobil Nunukan</h2>
+          <h2>Tanya Jawab</h2>
           <div class="faq" id="faq-list"></div>
         </div>
       </section>
 
-      <!-- LOKASI -->
       <section id="lokasi">
         <div class="w">
-          <h2>Lokasi Amir Rental di Nunukan</h2>
-
+          <h2>Lokasi</h2>
           <div class="loc">
             <dl>
               <dt>Alamat kantor</dt>
-              <dd>
-                Jl. Pattimura, Nunukan Tim., Kec. Nunukan,
-                Kabupaten Nunukan, Kalimantan Utara 77482
-              </dd>
-
+              <dd>Jl. Pattimura, Nunukan Tim., Kec. Nunukan, Kabupaten Nunukan, Kalimantan Utara 77482 </dd>
               <dt>Jam buka</dt>
               <dd>Setiap hari, 07.00 – 21.00 WITA</dd>
-
               <dt>Antar unit</dt>
               <dd>
-                Unit bisa diantar ke wilayah Nunukan.
-                Biaya antar dikonfirmasi lewat WhatsApp.
+                Unit bisa diantar ke wilayah Nunukan. Biaya antar dikonfirmasi lewat WhatsApp.
               </dd>
             </dl>
-
             <div>
               <a
                 class="map"
@@ -263,192 +130,96 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Lihat lokasi Amir Rental di Google Maps"
-              >
-                <svg viewBox="0 0 400 260" aria-hidden="true">
+                ><svg viewBox="0 0 400 260" aria-hidden="true">
                   <rect class="land" width="400" height="260" />
-                  <path
-                    class="wt"
-                    d="M300 0H400V260H340C310 200 330 120 300 0Z"
-                  />
-                  <path
-                    class="rd2"
-                    d="M0 90C100 80 180 130 330 120"
-                  />
-                  <path
-                    class="rd"
-                    d="M0 90C100 80 180 130 330 120"
-                  />
+                  <path class="wt" d="M300 0H400V260H340C310 200 330 120 300 0Z" />
+                  <path class="rd2" d="M0 90C100 80 180 130 330 120" />
+                  <path class="rd" d="M0 90C100 80 180 130 330 120" />
                   <path class="rd" d="M120 0L170 260" />
                   <path class="rd" d="M0 200H300" />
                   <path class="rd" d="M230 40L260 260" />
-
                   <path
                     d="M200 160C200 160 174 126 174 104a26 26 0 0 1 52 0C226 126 200 160 200 160Z"
-                    fill="#e5483d"
-                  />
-
-                  <circle cx="200" cy="104" r="10" fill="#fff" />
-                </svg>
-
-                <span class="mcard">
-                  Amir Rental
-                  <small>Nunukan, Kalimantan Utara</small>
-                </span>
-              </a>
-
-              <a
-                class="btn sky"
-                id="maps"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buka di Google Maps
-              </a>
+                    fill="#e5483d"/>
+                  <circle cx="200" cy="104" r="10" fill="#fff" /></svg><span class="mcard">Amir Rental<small>Nunukan, Kalimantan Utara</small></span></a><a class="btn sky" id="maps" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- RATING -->
       <section id="rating">
         <div class="w">
-          <h2>Rating dan Ulasan Pelanggan</h2>
-
+          <h2>Rating</h2>
           <div class="rv">
             <div>
               <div class="score" id="avg"></div>
               <div id="avgs"></div>
               <p class="note" id="cnt"></p>
-              <p class="note">
-                Ulasan dikumpulkan lewat WhatsApp setelah sewa selesai.
-              </p>
+              <p class="note">Ulasan dikumpulkan lewat WhatsApp setelah sewa selesai.</p>
             </div>
-
             <div id="rvs"></div>
           </div>
         </div>
       </section>
 
-      <!-- KONTAK -->
       <section id="kontak">
         <div class="w">
-          <h2>Hubungi Rental Mobil Nunukan</h2>
-
+          <h2>Kontak</h2>
           <div class="grid g2">
             <div class="card">
-              <h3>WhatsApp Amir Rental</h3>
-
-              <p>
-                Hubungi admin untuk informasi harga,
-                ketersediaan mobil, dan pemesanan rental mobil Nunukan.
-              </p>
-
-              <a
-                class="btn sky"
-                data-wa="ask"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat WhatsApp
-              </a>
+              <h3>WhatsApp</h3>
+              <p>Respon admin dalam 24 jam.</p>
+              <a class="btn sky" data-wa="ask" target="_blank" rel="noopener noreferrer">Chat</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TENTANG -->
       <section id="tentang">
         <div class="w">
-          <h2>Tentang Amir Rental</h2>
-
+          <h2>Tentang Kami</h2>
           <div class="about">
             <div>
               <p>
-                Amir Rental berawal dari satu mobil keluarga
-                yang disewakan ke tetangga di Nunukan.
-                Dari situ pelanggan datang lewat mulut ke mulut,
-                dan armada tumbuh pelan-pelan.
+                Amir Rental berawal dari satu mobil keluarga yang disewakan ke tetangga di Nunukan.
+                Dari situ pelanggan datang lewat mulut ke mulut, dan armada tumbuh pelan-pelan.
               </p>
-
               <p>
-                Prinsip kami sederhana: unit dirawat sebelum
-                dipinjamkan, harga ditulis di depan,
+                Prinsip kami sederhana: unit dirawat sebelum dipinjamkan, harga ditulis di depan,
                 dan pesanan dijawab langsung oleh orangnya.
               </p>
             </div>
-
             <div class="st">
-              <b>2019</b>
-              <span>mulai beroperasi</span>
-
-              <b>1200+</b>
-              <span>perjalanan selesai</span>
+              
+              <b>2019</b><span>mulai beroperasi</span><b>1200+</b><span>perjalanan selesai</span>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-      <div class="w">
-        <span>© 2026 Amir Rental</span>
-        <span>Rental Mobil Nunukan - Mobil siap, jalan tenang.</span>
-        <button class="tg" id="theme" type="button">
-          Ganti tema
-        </button>
-      </div>
+      <div class="w"><span>© 2026 Amir Rental</span><span>Mobil siap, jalan tenang.</span><button class="tg" id="theme" type="button">Ganti tema</button></div>
     </footer>
 
-    <!-- WHATSAPP FLOATING BUTTON -->
-    <a
-      class="btn sky fab"
-      data-wa="ask"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      WhatsApp
-    </a>
+    <a class="btn sky fab" data-wa="ask" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
-    <!-- FORM BOOKING -->
     <dialog id="dlg">
-      <h3>Booking Rental Mobil</h3>
-
+      <h3>Booking</h3>
       <div>
-        <label for="f-name">Nama</label>
-        <input id="f-name" maxlength="60" autocomplete="name" />
-
-        <label for="f-svc">Layanan</label>
-        <select id="f-svc"></select>
-
-        <label for="f-car">Mobil</label>
-        <select id="f-car"></select>
-
-        <label for="f-date">Tanggal ambil</label>
-        <input id="f-date" type="date" />
-
-        <label for="f-days">Lama sewa (hari)</label>
-        <input
-          id="f-days"
-          type="number"
-          min="1"
-          max="30"
-          value="1"
-          inputmode="numeric"/>
-
+        <label for="f-name">Nama</label><input id="f-name" maxlength="60" autocomplete="name" />
+        <label for="f-svc">Layanan</label
+        ><select id="f-svc"></select>
+        <label for="f-car">Mobil</label
+        ><select id="f-car"></select>
+        <label for="f-date">Tanggal ambil</label><input id="f-date" type="date" />
+        <label for="f-days">Lama sewa (hari)</label
+        ><input id="f-days" type="number" min="1" max="30" value="1" inputmode="numeric" />
         <div class="err" id="err" role="alert"></div>
-
         <div class="row">
-          <a
-            class="btn sky"
-            id="send"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Kirim ke WhatsApp</a>
-
-          <button class="btn out" id="close" type="button">
-            Tutup
-          </button>
+          <a class="btn sky" id="send" target="_blank" rel="noopener noreferrer"
+            >Kirim ke WhatsApp</a
+          ><button class="btn out" id="close" type="button">Tutup</button>
         </div>
       </div>
     </dialog>

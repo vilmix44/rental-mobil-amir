@@ -63,9 +63,9 @@ const K = KATEGORI; // singkatan untuk dipakai di data CARS
    tampil ilustrasi bawaan.
    Field: n = nama, s = deskripsi, p = harga per hari, k = kategori filter. */
 const CARS = Object.freeze([
-  { n: "Toyota Avanza 2017 merah", s: "5 kursi · manual · irit BBM", p: 300000, foto: "foto/avanza-2017-merah.jpg", k: [K.HEMAT,K.KELUARGA]},
-  { n: "Daihatsu Avanza 2017 hitam", s: "5 kursi · manual · irit BBM", p: 330000, foto: "foto/avanza-2017-hitam.jpg", k:[K.HEMAT,K.KELUARGA] },
-  { n: "Toyota Avanza 2017 silver", s: "5 kursi · manual · irit BBM", p: 350000, foto: "foto/avanza-2017-silver.jpg", k: [K.HEMAT,K.KELUARGA]},
+  { n: "Toyota Avanza 2018 merah", s: "5 kursi · manual · irit BBM",  foto: "foto/avanza-2017-merah.jpg", k: [K.HEMAT,K.KELUARGA]},
+  { n: "Daihatsu Avanza 2018 hitam", s: "5 kursi · manual · irit BBM",  foto: "foto/avanza-2017-hitam.jpg", k:[K.HEMAT,K.KELUARGA] },
+  { n: "Toyota Avanza 2018 silver", s: "5 kursi · manual · irit BBM",  foto: "foto/avanza-2017-silver.jpg", k: [K.HEMAT,K.KELUARGA]},
 ]);
 
 /* Peringatan di console jika ada kategori yang salah ketik di data CARS. */

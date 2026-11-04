@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rental-mobil-amir.pages.dev/sitemap.xml

@@ -22,6 +22,7 @@
   --card: #f4f4f2;
   --sky: #8cc8f0;
   --onsky: #0b0b0b;
+  --onbox: #fff;          /* teks di dalam .box: putih saat tema terang */
   --btn: #111;
   --onbtn: #fff;
 
@@ -42,6 +43,7 @@
     --card: #171717;
     --btn: #f2f2f2;
     --onbtn: #0c0c0c;
+    --onbox: #111;          /* teks di dalam .box: gelap saat tema gelap */
   }
 }
 
@@ -54,6 +56,7 @@
   --card: #171717;
   --btn: #f2f2f2;
   --onbtn: #0c0c0c;
+  --onbox: #111;          /* teks di dalam .box: gelap saat tema gelap */
 }
 
 
@@ -145,9 +148,11 @@ summary:focus-visible,
 
 .box {
   background: var(--sky);   /* warna kotak di belakang teks */
-  color: #fff;           /* warna tulisan */
-  padding: 0 14px;       /* ruang kiri-kanan antara teks dan tepi kotak */
-  border-radius: 6px;    /* sudut agak membulat, hapus kalau mau tajam */
+  color: var(--onbox);      /* putih saat tema terang, gelap saat tema gelap */
+  padding: 0 14px;          /* ruang kiri-kanan antara teks dan tepi kotak */
+  border-radius: 6px;       /* sudut agak membulat, hapus kalau mau tajam */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;   /* kotak tetap utuh kalau heading turun baris */
 }
 
 /* 3. TOMBOL ----------------------------------------------------------------- */

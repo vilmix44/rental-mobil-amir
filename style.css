@@ -145,9 +145,9 @@ summary:focus-visible,
 
 .box {
   background: #1e90ff;   /* warna kotak di belakang teks */
-  color: #fff;           /* warna teks */
-  padding: 2px 12px;     /* jarak teks ke tepi kotak */
-  border-radius: 6px;    /* hapus kalau mau sudut tajam */
+  color: #fff;           /* warna tulisan */
+  padding: 0 14px;       /* ruang kiri-kanan antara teks dan tepi kotak */
+  border-radius: 6px;    /* sudut agak membulat, hapus kalau mau tajam */
 }
 
 /* 3. TOMBOL ----------------------------------------------------------------- */

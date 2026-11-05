@@ -144,7 +144,7 @@ summary:focus-visible,
 }
 
 .box {
-  background: #1e90ff;   /* warna kotak di belakang teks */
+  background: var(--sky);   /* warna kotak di belakang teks */
   color: #fff;           /* warna tulisan */
   padding: 0 14px;       /* ruang kiri-kanan antara teks dan tepi kotak */
   border-radius: 6px;    /* sudut agak membulat, hapus kalau mau tajam */

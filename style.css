@@ -144,12 +144,11 @@ summary:focus-visible,
 }
 
 .box {
-  display: inline-block;      /* supaya padding & border rapi */
-  padding: 4px 14px;
-  border: 3px solid #1e90ff;  /* kotak outline */
-  border-radius: 8px;         /* hapus kalau mau kotak tajam */
+  background: #1e90ff;   /* warna kotak di belakang teks */
+  color: #fff;           /* warna teks */
+  padding: 2px 12px;     /* jarak teks ke tepi kotak */
+  border-radius: 6px;    /* hapus kalau mau sudut tajam */
 }
-
 
 /* 3. TOMBOL ----------------------------------------------------------------- */
 .btn {
